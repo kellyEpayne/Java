@@ -1,4 +1,4 @@
-Trash
+Tea
 10
 10
 1
@@ -11,6 +11,3 @@ false
 false
 Lesser Health Potion
 Lesser Health Potion
-Cave Map
-Castle Map
-The Dark King's Crown
