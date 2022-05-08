@@ -1,0 +1,14 @@
+Tea
+10
+10
+1
+10
+0
+10
+1
+false
+false
+Lesser Health Potion
+Lesser Health Potion
+
+
