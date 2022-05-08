@@ -54,15 +54,23 @@ public class Item {
         String greaterHealthPotion = "This potion heals 100 hp";
         String maxHealthPotion = "This potion heals to max hp";
 
+        String caveMap = "This map shows where the cave is located.";
+        String castleMap = "This map shows where the castle is located.";
+        String crown = "This is the Dark King's Crown. The world is saved!";
+
         itemDescriptions.put("Lesser Health Potion", lesserHealthPotion);
         itemDescriptions.put("Health Potion", healthPotion);
         itemDescriptions.put("Greater Health Potion", greaterHealthPotion);
         itemDescriptions.put("Max Health Potion", maxHealthPotion);
 
-        try{
-            desc = itemDescriptions.get(item);
-        }
-        catch (Exception e){
+        itemDescriptions.put("Cave Map", caveMap);
+        itemDescriptions.put("Castle Map", castleMap);
+        itemDescriptions.put("The Dark King's Crown", crown);
+
+        
+        desc = itemDescriptions.get(item);
+        
+        if(desc == null){
             desc = "item has no descritption";
         }
         return desc;

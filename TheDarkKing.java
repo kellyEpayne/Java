@@ -10,7 +10,6 @@ public class TheDarkKing {
         while(!(playerChoice.equals("QUIT"))){
             playerChoice = player.PlayerAction(validInputs, prompt);
             if (playerChoice.equals("NEW") || playerChoice.equals("NEW GAME")){
-                Save.loadGame(player);
                 Save.newGame(player);
             }else if(playerChoice.equals("LOAD") || playerChoice.equals("LOAD GAME")){
                 Save.loadGame(player);

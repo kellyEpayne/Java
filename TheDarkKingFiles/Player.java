@@ -15,6 +15,7 @@ public class Player {
     //Has map felt easier then running through the inventory to check for maps
     boolean hasCaveMap;
     boolean hasCastleMap;
+    boolean hasCrown;
     // The player will start with an empty inventory
     ArrayList<String> inventory = new ArrayList<String>();
     Scanner playerInput = new Scanner(System.in);

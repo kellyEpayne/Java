@@ -45,6 +45,7 @@ public class Save {
             int level = 1;
             boolean hasCaveMap = false;
             boolean hasCastleMap = false;
+            boolean hasCrown = false;
 
             //These lines puts all the default stats into the save file
             defaultSave.write(playerName);
@@ -66,17 +67,13 @@ public class Save {
             defaultSave.write(String.valueOf(hasCaveMap));
             defaultSave.write("\n");
             defaultSave.write(String.valueOf(hasCastleMap));
+            defaultSave.write("\n");
+            defaultSave.write(String.valueOf(hasCrown));
             defaultSave.write("\n");          
             defaultSave.write("Lesser Health Potion");
             defaultSave.write("\n");
             defaultSave.write("Lesser Health Potion");
             defaultSave.write("\n");
-
-            for(int i = 0; i < player.getPlayerInventory().size(); i++){
-                //Deletes previous inventory save
-                defaultSave.write("\n");
-            }
-
 
             defaultSave.close();
         } catch (IOException e){
@@ -111,6 +108,8 @@ public class Save {
         playerSave.write(String.valueOf(player.hasCaveMap));
         playerSave.write("\n");
         playerSave.write(String.valueOf(player.hasCastleMap));
+        playerSave.write("\n");
+        playerSave.write(String.valueOf(player.hasCrown));
         playerSave.write("\n");
 
         for(int i = 0; i < player.getPlayerInventory().size(); i++){
@@ -148,6 +147,7 @@ public class Save {
             player.level = saveReader.nextInt();
             player.hasCaveMap = saveReader.nextBoolean();
             player.hasCastleMap = saveReader.nextBoolean();
+            player.hasCrown = saveReader.nextBoolean();
 
             //If the player goes to the title screen and reloads their save it would duplicate their items
             //this line stops that

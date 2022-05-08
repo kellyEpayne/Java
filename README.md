@@ -5,7 +5,7 @@ This program is a text based RPG with a simple plot. This game has a save file t
 This game was written with two purposes, one to make an old game that I wrote better and two to learn Java. This game is my attempt to learn Java within two weeks.
 
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://photos.app.goo.gl/g4DxhnSuBEquaqo18)
 
 # Development Environment
 

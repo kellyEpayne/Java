@@ -106,8 +106,10 @@ public class Battle {
                     areaBossDefeated = true;
                 }
             }else if(monster.map.equals("The Dark King's Crown")){
+                if(player.hasCrown){
                 corpseMessage(monster.name);
                 areaBossDefeated = true;
+                }
             }
         }
 
